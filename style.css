@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #A26FE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+.upper {
+    background-color: #ffca28;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 30px;
+}
+.upper button {
+    background-color:#8ee3e6;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+.container {
+    background-color: #8ee3e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 81%;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 150px;
+}
+.line {
+    width: 97%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 15px;
+}
+#exerciseName{
+    font-size: 14px;
+    color: black;
+    width: 15%;
+    margin-bottom: 10px;
+}
+#reps{
+    font-size: 14px;
+    color: black;
+    width: 15%;
+    margin-bottom: 10px;
+}
+.end-workout{
+    width: 99%;
+}
+#hours, #minutes, #seconds {
+    width: 2%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffca28;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+h1 {
+    font-size: 24px;
+    color: black;
+}
+#totalTime {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+input {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="text"], input[type="number"] {
+    background-color: #cff6f8;
+}
+button {
+    background-color: #ffca28;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+#exerciseli {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+#exerciseli li {
+    background-color: #8ee3e6;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+#exerciseli li button {
+    margin-left: 10px;
+}
+#summary {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+#summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#summary th, #summary td {
+    padding: 10px;
+    text-align: left;
+}
+#summary th {
+    background-color: #8ee3e6;
+}
+#summary tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+    .upper, .container {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .upper {
+        flex-direction: column;
+    }
+    #hours, #minutes, #seconds {
+        width: 40px;
+    }
+    input {
+        width: 80%;
+    }
+    #exerciseli li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #exerciseli li button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #summary {
+        overflow-x: auto;
+    }
+    .line{
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #totalTime {
+        font-size: 20px;
+    }
+    .upper, .container {
+        padding: 10px;
+    }
+    button {
+        padding: 8px 12px;
+    }
+    .line{
+        display: none;
+    }
+}
