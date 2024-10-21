@@ -1,6 +1,3 @@
-# I'll recreate the Markdown file with just the project explanation.
-
-md_content = """
 # Workout Tracker
 
 This project is a **Workout Tracker** web application that allows users to track their exercise repetitions, time per exercise, and overall workout duration. The user can add exercises, specify the number of repetitions and time allotted for each, and monitor their progress in real-time. 
